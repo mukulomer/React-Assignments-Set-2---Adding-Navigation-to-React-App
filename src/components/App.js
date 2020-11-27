@@ -2,7 +2,7 @@ import React, { Component, useState } from "react";
 import "../styles/App.css";
 import Home from "./Home";
 import About from "./About";
-import LocationDisplay from "./LocationDisplay";
+import Location from "./LocationDisplay";
 import { Route, Link, Switch, useLocation } from "react-router-dom";
 
 function Invalid() {
@@ -24,7 +24,7 @@ class App extends Component {
             <Route path="/" exact component={Home} />
             <Route path="/" component={Invalid} />
           </Switch>
-          <LocationDisplay />
+          <Location />
         </div>
       </>
     );
@@ -32,4 +32,4 @@ class App extends Component {
 }
 
 export default App;
-export const LocationDisplay = LocationDisplay;
+export const LocationDisplay = Location;
